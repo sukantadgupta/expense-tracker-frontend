@@ -1,0 +1,63 @@
+h1 {
+    text-align: center;
+  }
+  
+  #signUp {
+    max-width: 300px;
+    margin: 0 auto;
+  }
+  
+  .input-cont {
+    position: relative;
+    margin-bottom: 20px;
+  }
+  
+  input[type="text"],
+  input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-bottom: 2px solid #ccc;
+    outline: none;
+  }
+  
+  .border1,
+  .border2 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #ccc;
+    transition: background-color 0.3s;
+  }
+  
+  .border2 {
+    background-color: transparent;
+  }
+  
+  input[type="text"]:focus ~ .border1,
+  input[type="password"]:focus ~ .border2 {
+    background-color: #007bff;
+  }
+  
+  .clear {
+    clear: both;
+  }
+  
+  input[type="submit"] {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    text-align: center;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #0056b3;
+  }

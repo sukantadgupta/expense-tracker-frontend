@@ -1,23 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+// import { useContext, useEffect } from "react";
+import "./App.css";
+import AllRotes from "./Components/AllRoutes/AllRotes";
+// import { ThemeContext } from "./Components/Context/Theme";
+// import Navbar from "./Components/Navbar/Navbar";
 
 function App() {
+  // const value = useContext(ThemeContext);
+
+  // const style = {
+  //   light: {
+  //     color: "black",
+  //     background: "white",
+  //   },
+  //   dark: {
+  //     color: "white",
+  //     background: "black",
+  //   },
+  // };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div
+      className="App"
+      // style={value.theme === "dark" ? style.light : style.dark}
+    >
+      {/* <Navbar /> */}
+      <AllRotes />
     </div>
   );
 }
